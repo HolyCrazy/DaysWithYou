@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/pureWhite"
+    android:layout_width="140dp"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/app_menu_tv_notification"
+        android:paddingLeft="15dp"
+        android:clickable="true"
+        android:background="@drawable/item_event_card_bg"
+        android:textSize="17dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent"
+        android:text="开启提醒"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/app_menu_tv_delete"
+        android:paddingLeft="15dp"
+        android:clickable="true"
+        android:background="@drawable/item_event_card_bg"
+        android:textSize="17dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorAccent"
+        android:text="删除"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

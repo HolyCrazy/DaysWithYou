@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/textColorWhite"
+            android:gravity="center"
+            android:text="创建"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/app_iv_finish"
+                android:background="@drawable/finish_normal"
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="28dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:overScrollMode="never"
+        android:layout_weight="0.09"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="bottom"
+                android:text="名称"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/name"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:textSize="15dp"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/app_et_event_name"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/et_input_bg"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="bottom"
+                android:text="地点"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/place"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:textSize="15dp"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/app_et_event_place"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/et_input_bg"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="bottom"
+                android:text="人物"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/people"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:textSize="15dp"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/app_et_event_people"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/et_input_bg"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="bottom"
+                android:text="时间"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/date"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/textColorGray"
+                    android:text="点我设置时间"
+                    android:id="@+id/app_tv_event_date"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/et_input_bg"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="bottom"
+                android:text="背景"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/color"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/app_tv_event_color"
+                    android:paddingLeft="4dp"
+                    android:background="@drawable/et_input_bg"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

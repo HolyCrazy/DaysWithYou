@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--弹窗动画-->
+    <style name="PopupAnimation" parent="android:Animation"
+        mce_bogus = "1">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_anim_scale_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_anim_scale_exit</item>
+    </style>
+
+    <style name="MenuAnimationLT" parent="android:Animation"
+        mce_bogus = "1">
+        <item name="android:windowEnterAnimation">@anim/menu_anim_scale_left_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_anim_scale_left_top_exit</item>
+    </style>
+    <style name="MenuAnimationRT" parent="android:Animation"
+        mce_bogus = "1">
+        <item name="android:windowEnterAnimation">@anim/menu_anim_scale_right_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_anim_scale_right_top_exit</item>
+    </style>
+    <style name="MenuAnimationLB" parent="android:Animation"
+        mce_bogus = "1">
+        <item name="android:windowEnterAnimation">@anim/menu_anim_scale_left_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_anim_scale_left_bottom_exit</item>
+    </style>
+    <style name="MenuAnimationRB" parent="android:Animation"
+        mce_bogus = "1">
+        <item name="android:windowEnterAnimation">@anim/menu_anim_scale_right_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_anim_scale_right_bottom_exit</item>
+    </style>
+
+</resources>

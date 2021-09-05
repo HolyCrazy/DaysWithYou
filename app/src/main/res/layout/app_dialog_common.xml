@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="140dp">
+        <TextView
+            android:id="@+id/app_tv_dialog_content"
+            android:textColor="@color/textColorGray"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="服务器维护中"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+        <View
+            android:background="@color/textColorGray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:clickable="true"
+                android:background="@drawable/item_event_card_bg"
+                android:id="@+id/app_tv_dialog_left_choice"
+                android:textSize="15dp"
+                android:textColor="@color/textColorGray"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/textColorGray"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:clickable="true"
+                android:background="@drawable/item_event_card_bg"
+                android:id="@+id/app_tv_dialog_right_choice"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:text="退出"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/textColorWhite"
+            android:gravity="center"
+            android:text="倒数日"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/app_iv_add"
+                android:background="@drawable/add_normal"
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.09"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/pureWhite"
+            android:id="@+id/app_rv_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
